@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jazmín Casenave</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="icon" sizes="200x200" href="fotos/ICONO.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body h1 {
+            text-align: center;
+            color: pink;
+            font-weight: 120;
+            font-size: 32px;
+            font-family: 'Playwrite Polska', serif;
+            margin-bottom: 0%;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 45;
+            font-size: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: 105;
+            font-size: 15px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            font-family: 'Playwrite Polska', serif;
+        }
+
+        h4 {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 110;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            font-weight: 200;
+            font-size: 15px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            font-family: 'Playwrite Polska', serif;
+            background-image: url("fotos/ICONO.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 15px;
+        }
+
+        div { width: 50%; }
+        img { width: 420%; }
+        video { width: 100%; }
+        main {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #video {
+            width: 50%;
+            margin: 50px auto;
+            align-items: center;
+        }
+
+        video { width: 100%; }
+        main {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #vinculo:hover { font-style: italic; }
+        a:hover { background-color: cadetblue; }
+        a {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: rgb(227, 14, 235);
+            color: black;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        a { text-decoration: none; }
+
+        .ellipse {
+            position: absolute;
+            background: pink;
+            border-radius: 50% 50%;
+            opacity: 0.7;
+            animation: move 5s infinite;
+        }
+
+        .ellipse.one {
+            width: 100px;
+            height: 50px;
+            top: 20%;
+            left: 10%;
+        }
+
+        .ellipse.two {
+            width: 150px;
+            height: 75px;
+            top: 40%;
+            left: 50%;
+        }
+
+        .ellipse.three {
+            width: 200px;
+            height: 100px;
+            top: 70%;
+            left: 30%;
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: deeppink;
+            transform: rotate(-45deg);
+            animation: float 3s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: deeppink;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(-20px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Jazmín Casenave</h1>
+    <h2><p>Soy Jazmín, estudiante Licenciatura en Diseño, en la facultad Torcuato Di Tella. Aquí les presento algunos de mis trabajos que estoy realizando en mi carrera.</p></h2>
+    <h3>BIENVENIDOS</h3>
+    <h4><a href="https://www.instagram.com/jazcasenave/" target="_blank" title="instagram">instagram</a></h4>
+    <main>
+        <div><a href="fotos/Trabajo1.jpg" data-lightbox="galeria"><img src="fotos/Trabajo1.jpg" alt="Trabajo1"></a></div>
+        <div><a href="fotos/Trabajo2.jpg" data-lightbox="galeria"><img src="fotos/Trabajo2.jpg" alt="Trabajo2"></a></div>
+        <div><a href="fotos/Trabajo3.jpg" data-lightbox="galeria"><img src="fotos/Trabajo3.jpg" alt="Trabajo3"></a></div>
+        <div><a href="fotos/Trabajo4.jpg" data-lightbox="galeria"><img src="fotos/Trabajo4.jpg" alt="Trabajo4"></a></div>
+    </main>
+    
+    <div class="ellipse one"></div>
+    <div class="ellipse two"></div>
+    <div class="ellipse three"></div>
+    <div class="heart" style="top: 50%; left: 80%;"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    
+    <script>
+        lightbox.option({
+          'fadeDuration': 200,
+          'wrapAround': true
+        })
+    </script>
+</body> <video src="fotos/video.mp4" controls></video>
+<footer>Portfolio Jazmin Casenave</footer>
+</html>
